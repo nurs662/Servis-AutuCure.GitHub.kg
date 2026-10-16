@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AutoCare — Автосервис</title>
+
+    <link rel="stylesheet" href="style(20).css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="#home" class="logo">
+            Auto<span>Care</span>
+        </a>
+
+        <nav class="nav">
+
+            <a href="#home" class="active">
+                Главная
+            </a>
+
+            <a href="#services">
+                Услуги
+            </a>
+
+            <a href="#booking">
+                Запись
+            </a>
+
+            <a href="#contacts">
+                Контакты
+            </a>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <span
+                class="profile-name"
+                id="profileName"
+            ></span>
+
+            <button
+                class="btn btn-outline"
+                id="loginButton"
+                onclick="openModal('loginModal')"
+            >
+                👤 Войти
+            </button>
+
+            <button
+                class="btn btn-outline"
+                id="logoutButton"
+                style="display:none;"
+                onclick="logout()"
+            >
+                Выйти
+            </button>
+
+            <button
+                class="mobile-menu-button"
+                id="mobileMenuButton"
+                type="button"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav">
+
+        <a href="#home">
+            Главная
+        </a>
+
+        <a href="#services">
+            Услуги
+        </a>
+
+        <a href="#garage">
+            Мой гараж
+        </a>
+
+        <a href="#appointments">
+            Мои записи
+        </a>
+
+        <a href="#history">
+            История
+        </a>
+
+        <a href="#contacts">
+            Контакты
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-container">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                АВТОСЕРВИС AUTOCARE
+            </div>
+
+            <h1>
+                Заботьтесь<br>
+                о своём<br>
+                <span>автомобиле</span>
+            </h1>
+
+            <p>
+                Записывайтесь на обслуживание онлайн,
+                отслеживайте ремонт и храните историю
+                обслуживания автомобиля в одном месте.
+            </p>
+
+            <button
+                class="btn btn-primary btn-large"
+                onclick="openBooking()"
+            >
+                📅
+                Записаться на обслуживание
+                →
+            </button>
+
+        </div>
+
+
+        <!-- преимущества -->
+
+        <div class="hero-car-card">
+
+            <div>
+
+                <div class="hero-car-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <h3>
+                        Надёжный сервис
+                    </h3>
+
+                    <p>
+                        Опытные мастера<br>
+                        и современное оборудование
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <div class="hero-car-icon">
+                    ◷
+                </div>
+
+                <div>
+                    <h3>
+                        Быстро и удобно
+                    </h3>
+
+                    <p>
+                        Онлайн-запись<br>
+                        и уведомления
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <div class="hero-car-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <h3>
+                        Прозрачность
+                    </h3>
+
+                    <p>
+                        Вся история работ<br>
+                        в вашем аккаунте
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section
+    class="services-section"
+    id="services"
+>
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-label">
+                НАШИ УСЛУГИ
+            </span>
+
+            <h2>
+                Услуги для вашего автомобиля
+            </h2>
+
+            <p>
+                Выберите необходимое обслуживание
+                для вашего автомобиля.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+            <!-- 1 -->
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    🛢
+                </div>
+
+                <h3>
+                    Замена масла
+                </h3>
+
+                <p>
+                    Замена моторного масла
+                    и масляного фильтра.
+                </p>
+
+                <div class="service-card-price">
+                    ◷ &nbsp; от 1 500 сом
+                    &nbsp;&nbsp;&nbsp;
+                    ◷ &nbsp; 60 минут
+                </div>
+
+            </article>
+
+
+            <!-- 2 -->
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    🔧
+                </div>
+
+                <h3>
+                    Диагностика
+                </h3>
+
+                <p>
+                    Полная компьютерная
+                    диагностика автомобиля.
+                </p>
+
+                <div class="service-card-price">
+                    ◷ &nbsp; от 1 000 сом
+                    &nbsp;&nbsp;&nbsp;
+                    ◷ &nbsp; 45 минут
+                </div>
+
+            </article>
+
+
+            <!-- 3 -->
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    ◫
+                </div>
+
+                <h3>
+                    Шиномонтаж
+                </h3>
+
+                <p>
+                    Замена и балансировка
+                    автомобильных колёс.
+                </p>
+
+            </article>
+
+
+            <!-- 4 -->
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    ❄
+                </div>
+
+                <h3>
+                    Кондиционер
+                </h3>
+
+                <p>
+                    Диагностика и обслуживание
+                    системы кондиционирования.
+                </p>
+
+            </article>
+
+
+            <!-- 5 -->
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    ⚡
+                </div>
+
+                <h3>
+                    Диагностика электрики
+                </h3>
+
+                <p>
+                    Поиск неисправностей
+                    электрических систем.
+                </p>
+
+            </article>
+
+
+            <!-- 6 -->
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    ⚙
+                </div>
+
+                <h3>
+                    Ремонт ходовой
+                </h3>
+
+                <p>
+                    Диагностика и ремонт
+                    подвески автомобиля.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     GARAGE
+===================================================== -->
+
+<section
+    class="garage-section"
+    id="garage"
+>
+
+    <div class="container">
+
+        <div class="garage-header">
+
+            <div class="section-header">
+
+                <span class="section-label">
+                    МОЙ ГАРАЖ
+                </span>
+
+                <h2>
+                    Ваши автомобили
+                </h2>
+
+                <p>
+                    Управляйте автомобилями
+                    и записывайте их на обслуживание.
+                </p>
+
+            </div>
+
+            <button
+                class="btn btn-primary"
+                data-add-car
+                onclick="openModal('carModal')"
+            >
+                + Добавить автомобиль
+            </button>
+
+        </div>
+
+
+        <div
+            class="garage-container"
+            id="garageContainer"
+        >
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     APPOINTMENTS
+===================================================== -->
+
+<section
+    class="appointments-section"
+    id="appointments"
+>
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-label">
+                МОИ ЗАПИСИ
+            </span>
+
+            <h2>
+                Записи на обслуживание
+            </h2>
+
+            <p>
+                Следите за статусом обслуживания
+                вашего автомобиля.
+            </p>
+
+        </div>
+
+
+        <div
+            id="appointmentsContainer"
+        >
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     HISTORY
+===================================================== -->
+
+<section
+    class="history-section"
+    id="history"
+>
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-label">
+                ИСТОРИЯ
+            </span>
+
+            <h2>
+                История обслуживания
+            </h2>
+
+            <p>
+                Все завершённые работы
+                по вашим автомобилям.
+            </p>
+
+        </div>
+
+
+        <div
+            id="historyContainer"
+        >
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ADMIN PANEL
+===================================================== -->
+
+<section
+    class="admin-section"
+    id="adminPanel"
+>
+
+    <div class="container">
+
+        <div class="admin-header">
+
+            <div class="section-header">
+
+                <span class="section-label">
+                    ПАНЕЛЬ АДМИНИСТРАТОРА
+                </span>
+
+                <h2>
+                    Управление AutoCare
+                </h2>
+
+                <p>
+                    Управление клиентами,
+                    автомобилями и записями.
+                </p>
+
+            </div>
+
+            <div class="admin-user-badge">
+                👑 Администратор
+            </div>
+
+        </div>
+
+
+        <!-- статистика -->
+
+        <div class="admin-stats">
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    📋
+                </div>
+
+                <div>
+                    <strong id="adminTotalAppointments">
+                        0
+                    </strong>
+
+                    <span>
+                        Всего записей
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    ⏳
+                </div>
+
+                <div>
+                    <strong id="adminPendingAppointments">
+                        0
+                    </strong>
+
+                    <span>
+                        Ожидают подтверждения
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    🔧
+                </div>
+
+                <div>
+                    <strong id="adminWorkingAppointments">
+                        0
+                    </strong>
+
+                    <span>
+                        В работе
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <strong id="adminCompletedAppointments">
+                        0
+                    </strong>
+
+                    <span>
+                        Завершено
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- записи -->
+
+        <div class="admin-card">
+
+            <div class="admin-card-header">
+
+                <h3>
+                    📋 Все записи клиентов
+                </h3>
+
+            </div>
+
+            <div
+                id="adminAppointmentsContainer"
+            >
+            </div>
+
+        </div>
+
+
+        <!-- клиенты -->
+
+        <div class="admin-card">
+
+            <div class="admin-card-header">
+
+                <h3>
+                    👥 Клиенты
+                </h3>
+
+            </div>
+
+            <div
+                id="adminClientsContainer"
+            >
+            </div>
+
+        </div>
+
+
+        <!-- автомобили -->
+
+        <div class="admin-card">
+
+            <div class="admin-card-header">
+
+                <h3>
+                    🚗 Все автомобили
+                </h3>
+
+            </div>
+
+            <div
+                id="adminCarsContainer"
+            >
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section
+    class="cta-section"
+    id="booking"
+>
+
+    <div class="container">
+
+        <div class="cta">
+
+            <div class="cta-content">
+
+                <div>
+
+                    <span class="section-label">
+                        ВАШ АВТОМОБИЛЬ
+                        В ХОРОШИХ РУКАХ
+                    </span>
+
+                    <h2>
+                        Auto<span style="color:#1677ff;">
+                            Care
+                        </span>
+                    </h2>
+
+                    <p>
+                        Забота о вашем автомобиле
+                        начинается здесь.
+                    </p>
+
+                </div>
+
+                <button
+                    class="btn btn-primary btn-large"
+                    onclick="openBooking()"
+                >
+                    📅
+                    Записаться на обслуживание
+                    →
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACTS
+===================================================== -->
+
+<section
+    id="contacts"
+    style="
+        display:none;
+    "
+>
+</section>
+
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-top">
+
+            <div>
+
+                <div class="footer-logo">
+                    🚗 Auto<span>Care</span>
+                </div>
+
+                <p>
+                    Забота о вашем автомобиле
+                </p>
+
+            </div>
+
+
+            <nav class="footer-nav">
+
+                <a href="#home">
+                    Главная
+                </a>
+
+                <a href="#services">
+                    Услуги
+                </a>
+
+                <a href="#booking">
+                    Запись
+                </a>
+
+                <a href="#contacts">
+                    Контакты
+                </a>
+
+            </nav>
+
+
+            <div>
+
+                <span
+                    style="
+                        font-size:20px;
+                        margin-right:10px;
+                    "
+                >
+                    ◎
+                </span>
+
+                <span
+                    style="
+                        font-size:20px;
+                    "
+                >
+                    ➤
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2025 AutoCare.
+                Все права защищены.
+            </p>
+
+            <p>
+                Быстро. Надёжно. Профессионально.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     LOGIN MODAL
+===================================================== -->
+
+<div
+    class="modal"
+    id="loginModal"
+>
+
+    <div class="modal-content">
+
+        <button
+            class="modal-close"
+            onclick="closeModal('loginModal')"
+        >
+            ×
+        </button>
+
+        <h2>
+            Вход в AutoCare
+        </h2>
+
+        <p>
+            Войдите в свой аккаунт
+            для управления автомобилями.
+        </p>
+
+
+        <form id="loginForm">
+
+            <div class="form-group">
+
+                <label for="loginEmail">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Введите email"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="loginPassword">
+                    Пароль
+                </label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Введите пароль"
+                    required
+                >
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn btn-primary btn-full"
+            >
+                Войти
+            </button>
+
+        </form>
+
+
+        <p
+            style="
+                margin-top:18px;
+                margin-bottom:0;
+                text-align:center;
+            "
+        >
+            Нет аккаунта?
+
+            <button
+                type="button"
+                class="btn btn-outline"
+                style="
+                    margin-left:5px;
+                    min-height:32px;
+                    padding:0 10px;
+                "
+                onclick="
+                    closeModal('loginModal');
+                    openModal('registerModal');
+                "
+            >
+                Регистрация
+            </button>
+
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     REGISTER MODAL
+===================================================== -->
+
+<div
+    class="modal"
+    id="registerModal"
+>
+
+    <div class="modal-content">
+
+        <button
+            class="modal-close"
+            onclick="closeModal('registerModal')"
+        >
+            ×
+        </button>
+
+        <h2>
+            Регистрация
+        </h2>
+
+        <p>
+            Создайте аккаунт AutoCare.
+        </p>
+
+
+        <form id="registerForm">
+
+            <div class="form-group">
+
+                <label for="registerName">
+                    Имя
+                </label>
+
+                <input
+                    type="text"
+                    id="registerName"
+                    placeholder="Ваше имя"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="registerEmail">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="registerEmail"
+                    placeholder="example@gmail.com"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="registerPassword">
+                    Пароль
+                </label>
+
+                <input
+                    type="password"
+                    id="registerPassword"
+                    placeholder="Минимум 6 символов"
+                    required
+                >
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn btn-primary btn-full"
+            >
+                Создать аккаунт
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     CAR MODAL
+===================================================== -->
+
+<div
+    class="modal"
+    id="carModal"
+>
+
+    <div class="modal-content">
+
+        <button
+            class="modal-close"
+            onclick="closeModal('carModal')"
+        >
+            ×
+        </button>
+
+        <h2>
+            Добавить автомобиль
+        </h2>
+
+        <p>
+            Заполните данные вашего автомобиля.
+        </p>
+
+
+        <form id="carForm">
+
+            <div class="form-group">
+
+                <label for="carMake">
+                    Марка
+                </label>
+
+                <input
+                    type="text"
+                    id="carMake"
+                    placeholder="BMW"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="carModel">
+                    Модель
+                </label>
+
+                <input
+                    type="text"
+                    id="carModel"
+                    placeholder="X5"
+                    required
+                >
+
+            </div>
+
+
+            <div
+                style="
+                    display:grid;
+                    grid-template-columns:1fr 1fr;
+                    gap:12px;
+                "
+            >
+
+                <div class="form-group">
+
+                    <label for="carYear">
+                        Год
+                    </label>
+
+                    <input
+                        type="number"
+                        id="carYear"
+                        placeholder="2022"
+                        min="1950"
+                        max="2100"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="carColor">
+                        Цвет
+                    </label>
+
+                    <input
+                        type="text"
+                        id="carColor"
+                        placeholder="Чёрный"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="carPlate">
+                    Госномер
+                </label>
+
+                <input
+                    type="text"
+                    id="carPlate"
+                    placeholder="01 KG 123 ABC"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="carMileage">
+                    Пробег, км
+                </label>
+
+                <input
+                    type="number"
+                    id="carMileage"
+                    placeholder="85000"
+                    min="0"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="carProblem">
+                    Проблема / жалоба
+                </label>
+
+                <textarea
+                    id="carProblem"
+                    placeholder="Например: появился странный звук..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="carInfo">
+                    Дополнительная информация
+                </label>
+
+                <textarea
+                    id="carInfo"
+                    placeholder="Дополнительные сведения..."
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn btn-primary btn-full"
+            >
+                Сохранить автомобиль
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     BOOKING MODAL
+===================================================== -->
+
+<div
+    class="modal"
+    id="bookingModal"
+>
+
+    <div class="modal-content">
+
+        <button
+            class="modal-close"
+            onclick="closeModal('bookingModal')"
+        >
+            ×
+        </button>
+
+        <h2>
+            Запись на обслуживание
+        </h2>
+
+        <p>
+            Выберите автомобиль,
+            услугу и удобное время.
+        </p>
+
+
+        <form id="bookingForm">
+
+            <div class="form-group">
+
+                <label for="bookingCar">
+                    Автомобиль
+                </label>
+
+                <select
+                    id="bookingCar"
+                    required
+                >
+                    <option value="">
+                        Выберите автомобиль
+                    </option>
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="bookingService">
+                    Услуга
+                </label>
+
+                <select
+                    id="bookingService"
+                    required
+                >
+
+                    <option value="">
+                        Выберите услугу
+                    </option>
+
+                    <option value="Диагностика">
+                        Диагностика
+                    </option>
+
+                    <option value="Замена масла">
+                        Замена масла
+                    </option>
+
+                    <option value="Шиномонтаж">
+                        Шиномонтаж
+                    </option>
+
+                    <option value="Обслуживание кондиционера">
+                        Обслуживание кондиционера
+                    </option>
+
+                    <option value="Диагностика электрики">
+                        Диагностика электрики
+                    </option>
+
+                    <option value="Ремонт ходовой">
+                        Ремонт ходовой
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div
+                style="
+                    display:grid;
+                    grid-template-columns:1fr 1fr;
+                    gap:12px;
+                "
+            >
+
+                <div class="form-group">
+
+                    <label for="bookingDate">
+                        Дата
+                    </label>
+
+                    <input
+                        type="date"
+                        id="bookingDate"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="bookingTime">
+                        Время
+                    </label>
+
+                    <input
+                        type="time"
+                        id="bookingTime"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="bookingComplaint">
+                    Что случилось?
+                </label>
+
+                <textarea
+                    id="bookingComplaint"
+                    placeholder="Опишите проблему автомобиля..."
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn btn-primary btn-full"
+            >
+                📅 Подтвердить запись
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     SUCCESS MODAL
+===================================================== -->
+
+<div
+    class="modal"
+    id="successModal"
+>
+
+    <div class="modal-content success-modal">
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <h2>
+            Заявка отправлена!
+        </h2>
+
+        <p>
+            Ваша запись сохранена.
+            Статус: «Ожидает подтверждения».
+        </p>
+
+        <p>
+            Для быстрой связи вы можете
+            отправить заявку в WhatsApp.
+        </p>
+
+
+        <button
+            class="btn btn-whatsapp btn-full"
+            data-success-whatsapp
+        >
+            💬 Отправить в WhatsApp
+        </button>
+
+
+        <button
+            class="btn btn-outline btn-full"
+            style="margin-top:10px;"
+            onclick="closeSuccessModal()"
+        >
+            Готово
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     ADMIN WORK MODAL
+===================================================== -->
+
+<div
+    class="modal"
+    id="adminWorkModal"
+>
+
+    <div class="modal-content">
+
+        <button
+            class="modal-close"
+            onclick="closeModal('adminWorkModal')"
+        >
+            ×
+        </button>
+
+        <h2>
+            Работа с заявкой
+        </h2>
+
+        <p>
+            Управление статусом обслуживания.
+        </p>
+
+
+        <div id="adminWorkContent">
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
